@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<h1 id="title">Fast Food Survey Form</h1>
+
+<p id="description">Applied Responsive Web Design Project: Build a Survey Project</p>
+<form id="survey-form">
+  <div class= "group">
+    <label id='name-label'>Name:</label>
+    <input id="name" type="text" required placeholder= "Enter Full Name">
+    <span class="validity"></span>
+      </div>
+  </div>
+  <div class= "group">
+    <label id='email-label'>Email:</label>
+    <input id="email" type="email" required placeholder= "Email">
+    <span class="validity"></span>
+      </div>
+  </div>
+  <div class= "group">
+    <label id='number-label'>Age:</label>
+    <input id="number" type="number" min="1" max="100" placeholder=" Enter your Age">
+    <span class="validity"></span>
+      </div>
+  </div>
+  <div class= "group">
+    <p>What is your Gender?</p>
+    <div class= "input-group">
+      <label for="Male"><input id="Male" type="radio"  value="Male" name="gender">Male</label>
+      <label for= "Female"><input id ="Female" type="radio" value="Female" name="gender">Female</label>
+      <label for ="Other"><input id= "Other" type="radio" value="Other" name="gender">Other</label>
+    </div>
+  </div>
+  <div class= "group">
+    <p>Do you consume fast food?</p>
+      <div class="input-group">
+        <label for="Yes"><input id="Yes" type="radio"  value="Yes" >Yes</label>
+      <label for="No"><input id="No" type="radio" value="No">No</label>
+    </div>
+  </div>
+    <div class= "group">
+    <label id="dropdown-label">Which is your Favourite Fast Food Joint:</label>
+    <select id="dropdown">
+      <option value="" disabled selected>Select an option</option>
+      <option>KFC</option>
+      <option>Chicken Inn</option>
+    </select>
+  </div>
+  <div class= "group">
+    <p> How often do you consume fast food on a weekly basis?</p>
+    <div class= "input-group">
+    <label for="1-2 times"><input type="checkbox" value="1">1-2 times</label>
+    <label for="3-4 times"><input type="checkbox" value="2">3-4 times</label>
+    <label for=">5-6 times"><input type="checkbox" value="3">5-6 times</label>
+    <label for="7 times or more "><input type="checkbox" value="4">7 times or more </label>
+    </div>
+   </div> 
+  <div class= "group">
+    <p>Do you have any of these Health conditions?</p>
+    <div class="input-group">
+    <label><input type="checkbox" value="1">Obesity</label>
+    <label><input type="checkbox" value="2">Diabetes</label>
+    <label><input type="checkbox" value="3">Heart Disease</label>
+    <label><input type="checkbox" value="4">Other(Please Specify)</label>
+    </div>
+  </div>
+  
+  <div class= "group">
+    <label id="text-area-label" for="comments"><p>What are your thoughts on Fast food consumption in relation to its health effects?</p></label> 
+      <textarea id="comments"  placeholder="Write your comments here.." cols="30" rows="5"></textarea>
+  </div>
+  <div class= "group">
+    <input id="submit" class="button" type="submit" value="Submit">
+      </div>
+</form>
